@@ -26,3 +26,19 @@ helloBtn.addEventListener("click", createOnBtn);
 
 // !-------------------------------------------
 // TODO:onclick -> add name, oui?display in diag:null;
+const addName = document.getElementById("addName");
+// console.log(addName);
+var nameIt;
+function askName() {
+  nameIt = prompt("Donner un nom.");
+  console.log(nameIt);
+  let question = prompt(
+    "Voulez vous garder le nom : " + nameIt + " ? (reponse attendue : o/n)"
+  );
+  if (question === "o") {
+    alert("Votre nom est " + nameIt);
+    return;
+  }
+  console.log("Aurevoir.");
+}
+addName.addEventListener("click", askName);

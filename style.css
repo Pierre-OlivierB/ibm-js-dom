@@ -7,18 +7,27 @@ body {
   /* background: red; */
   height: 100vh;
 }
-
+.box {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .container {
   margin: 20px;
-  width: 50%;
+  width: 40%;
   height: 25%;
   border: 1px solid hsl(0, 0%, 20%);
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+}
+#hello {
+  display: flex;
+  flex-wrap: wrap;
 }
 button {
-  width: 100px;
+  width: 150px;
   height: 50px;
   border-radius: 5px;
   border: 1px solid hsl(0, 0%, 20%);
